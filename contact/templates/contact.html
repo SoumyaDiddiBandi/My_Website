@@ -1,0 +1,145 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body{
+   overflow-x:hidden;
+   font-family:'Lato', sans-serif;
+   color:#505962;
+
+}
+.navbar{
+text-transform:uppercase;
+font-weight:500;
+font-size:1rem;
+letter-spacing:.1rem;
+}
+.navbar-brand h3{
+height:2rem;
+color:#1ebba3;
+}
+.navbar-nav li{
+padding-right:.7rem;
+}
+.navbar-nav li a{
+color:white;
+}
+.navbar-dark .navbar-nav _nav-link{
+color:white;
+padding-top:.8rem;
+}
+.navbar-dark .navbar-nav _nav-link.active{
+background-color:#1ebba3;
+
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+background-color:#1ebba3;
+}
+.caption{
+padding-top:80px;
+}
+#about{
+padding:30px;
+}
+.caption:hover{
+background-image:url();
+}
+#blog{
+border-bottom:.10rem solid black;
+}
+footer{
+background-color:#262526;
+padding:20px;
+text-align:center;
+color:white;
+}
+.socket{
+text-align:center;
+border-top:.09rem solid white;
+background-color:#262526;
+color:white;
+}
+</style>
+<!doctype html>
+< lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+      <title>Soumya Diddi Bandi</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+  </head>
+  < data-spy="scroll" data-target="#navbarResponsive">
+  <!---start Home Section -->
+  <div id="home">
+  <!---Navigation--->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="#"><h3>Soumya Diddi Bandi</h3>
+</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://127.0.0.1:8000/home/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://127.0.0.1:8000/about/">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://127.0.0.1:8000/projects/">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://127.0.0.1:8000/blog/">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://127.0.0.1:8000/contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+
+      </nav>
+      <style>
+          .head{
+          padding:80px 0px 10px 20px;}
+          #form{
+          padding:30px;
+          display:block;
+          }
+          #your_message{
+          padding-left:20px;
+          }
+         button{
+         margin-left:100px;
+}
+ </style>
+<div class="tex-center">
+<h1 class="head">Contact Me!</h1>
+<!---<form class=form method="post">
+
+    {%csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
+</div>!--->
+     <html>
+      <body>
+      <section id="form">
+          <form action=mailto:soumya8394@gmail.com method="post">
+             <div> <label for="name" >Name</label>
+              <input type="text" id="your_name" name="your_name" value="{{ current_name }}"required>
+             </div>
+              <div><label for="query">E-Mail  </label>
+
+<input type="email" id="your_mail" name="your_mail" value="{{ current_name }}"required>
+              </div><div><label for="query">Query</label>
+              <textarea type="description" id="your_message" name="your_message" value="{{ current_name }}"required></textarea>
+          </div>
+              <button type="submit" value="ok">Submit</button>
+          </form>
+      </section>
+      </body>
+      </html>
